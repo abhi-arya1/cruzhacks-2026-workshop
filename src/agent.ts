@@ -72,6 +72,7 @@ const searchTool = tool({
 
     // Convert L2 distances to similarity scores (0-1 range, higher is better)
     // L2 distance for normalized vectors ranges from 0 (identical) to 2 (opposite)
+    // https://en.wikipedia.org/wiki/Cosine_similarity
     const sources = ids.map((id, i) => {
       const distance = distances[i];
       if (!distance) {
