@@ -28,6 +28,46 @@ bun run src/push_dataset.ts
 bun run src/agent.ts "How do I optimize React re-renders?"
 ```
 
+# Search Example Queries
+Based on the dataset, here are some example queries you can try: 
+
+Basic Concept Queries
+- "how to optimize rerenders"
+- "caching strategies"
+- "lazy loading"
+- "bundle size optimization"
+Problem-Oriented Queries
+- "my react app is slow"
+- "reduce javascript bundle size"
+- "prevent unnecessary rerenders"
+- "hydration flickering issue"
+- "dom updates causing jank"
+Technique-Specific Queries
+- "useMemo vs useCallback"
+- "dynamic imports"
+- "suspense boundaries"
+- "parallel data fetching"
+- "event listener performance"
+Use Case Queries
+- "optimizing svg animations"
+- "localStorage best practices"
+- "server side caching"
+- "deduplicating api requests"
+- "batching dom updates"
+Advanced/Specific Queries
+- "content-visibility css property"
+- "passive event listeners"
+- "barrel imports problem"
+- "LRU cache implementation"
+- "derived state anti-pattern"
+Natural Language Queries
+- "why is my state update slow"
+- "best way to handle async dependencies"
+- "should I use transitions for loading states"
+- "when to preload resources"
+
+Run any of these with `bun run src/agent.ts <QUERY>`
+
 # How It Works
 
 ## Architecture Overview
