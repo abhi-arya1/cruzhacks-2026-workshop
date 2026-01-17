@@ -1,0 +1,19 @@
+{
+  "name": "cruzhacks-search-demo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@abhi-arya1/mastra-minirag": "^1.0.1",
+    "@types/node": "^25.0.9",
+    "ai": "^6.0.39",
+    "chromadb": "^3.2.2",
+    "openai": "^6.16.0"
+  }
+}
