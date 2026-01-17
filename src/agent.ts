@@ -101,10 +101,9 @@ async function runAgent(userQuery: string) {
     tools: { search: searchTool },
     stopWhen: stepCountIs(5), // Make multi-step agents really simply, using stepCountIs for the amount of actions they should take
     system: `You are a helpful assistant that answers questions about writing good and performant web development code.
-You have access to a search tool that can query a React documentation knowledge base.
-Use the search tool when you need specific information from the documentation.
-Keep your response brief, and be practical in what you output.
-If you cannot find relevant information, say so.`,
+    You have access to a search tool that can query a React documentation knowledge base.
+    Use the search tool for all queries. Keep your response brief, and be practical in what you output.
+    If you cannot find relevant information, say so.`,
     prompt: userQuery,
     maxOutputTokens: 1024,
     onChunk: ({ chunk }) => {
