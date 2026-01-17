@@ -36,30 +36,35 @@ Basic Concept Queries
 - "caching strategies"
 - "lazy loading"
 - "bundle size optimization"
+
 Problem-Oriented Queries
 - "my react app is slow"
 - "reduce javascript bundle size"
 - "prevent unnecessary rerenders"
 - "hydration flickering issue"
 - "dom updates causing jank"
+
 Technique-Specific Queries
 - "useMemo vs useCallback"
 - "dynamic imports"
 - "suspense boundaries"
 - "parallel data fetching"
 - "event listener performance"
+
 Use Case Queries
 - "optimizing svg animations"
 - "localStorage best practices"
 - "server side caching"
 - "deduplicating api requests"
 - "batching dom updates"
+
 Advanced/Specific Queries
 - "content-visibility css property"
 - "passive event listeners"
 - "barrel imports problem"
 - "LRU cache implementation"
 - "derived state anti-pattern"
+
 Natural Language Queries
 - "why is my state update slow"
 - "best way to handle async dependencies"
