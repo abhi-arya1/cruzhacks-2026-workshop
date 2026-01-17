@@ -6,15 +6,12 @@ import { OpenAI } from "openai";
 // See for reference: https://vercel.com/docs/ai-gateway/openai-compat/embeddings
 const AI_GATEWAY_BASE_URL = "https://ai-gateway.vercel.sh/v1";
 
-class MyEmbeddingFunction implements EmbeddingFunction {
-  private api_key: string;
+export class MyEmbeddingFunction implements EmbeddingFunction {
   private openai: OpenAI;
 
-  constructor(api_key: string) {
-    this.api_key = api_key;
-
+  constructor() {
     this.openai = new OpenAI({
-      apiKey: this.api_key,
+      apiKey: process.env.AI_GATEWAY_API_KEY,
       baseURL: AI_GATEWAY_BASE_URL,
     });
   }
