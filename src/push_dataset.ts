@@ -10,8 +10,7 @@ import { embedMany } from "ai";
 import { readdir, readFile } from "fs/promises";
 import { join } from "path";
 import { MyEmbeddingFunction } from "./util/embedding_function";
-
-export const COLLECTION_NAME = "react-info";
+import { COLLECTION_NAME } from "./constants";
 
 // Initialize the chroma client
 const client = new CloudClient({

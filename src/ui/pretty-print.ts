@@ -38,10 +38,6 @@ export function printSearching(query: string) {
   console.log(`${colors.dim}Searching for \"${query}\"...${colors.reset}\n`);
 }
 
-export function printSearchComplete() {
-  console.log(`${colors.dim}Finished search...${colors.reset}\n`);
-}
-
 export function printSources(sources: { id: string; similarity: number }[]) {
   console.log(`${colors.magenta}${colors.bold}Sources:${colors.reset}`);
   for (const { id, similarity } of sources) {
@@ -57,11 +53,6 @@ export function printSources(sources: { id: string; similarity: number }[]) {
     );
   }
   console.log();
-}
-
-export function printAnswer(answer: string) {
-  console.log(`${colors.green}${colors.bold}Answer:${colors.reset}`);
-  console.log(`${colors.white}${answer}${colors.reset}\n`);
 }
 
 export function printDivider() {

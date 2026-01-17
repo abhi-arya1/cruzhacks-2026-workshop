@@ -12,11 +12,10 @@ import {
   printQuery,
   printSearching,
   printSources,
-  printAnswer,
   printError,
-  printSearchComplete,
 } from "./ui/pretty-print";
 import { MyEmbeddingFunction } from "./util/embedding_function";
+import { COLLECTION_NAME } from "./constants";
 
 // ANSI color codes
 const colors = {
@@ -52,7 +51,7 @@ const searchTool = tool({
     console.warn = () => {};
 
     const collection = await client.getCollection({
-      name: "react-info",
+      name: COLLECTION_NAME,
       embeddingFunction: new MyEmbeddingFunction(),
     });
 
