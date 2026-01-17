@@ -23,3 +23,7 @@ To run:
 ```bash
 bun run index.ts
 ```
+
+# Other Resources 
+
+Beyond the Markdown files used in this project, if you want to use more complex files, you can use the [Cloudflare ToMarkdown Conversion API](https://developers.cloudflare.com/workers-ai/features/markdown-conversion/) to extend the capabilities of your search, such as to PDFs, Word docs, etc.
