@@ -17,7 +17,6 @@ import {
   printSearchComplete,
 } from "./ui/pretty-print";
 import { MyEmbeddingFunction } from "./util/embedding_function";
-import { extractSources } from "./util/sources";
 
 // ANSI color codes
 const colors = {
